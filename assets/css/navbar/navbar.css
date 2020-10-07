@@ -1,0 +1,52 @@
+.navbar-fixed nav{
+	overflow: hidden;
+}
+
+/* text in nav bar */
+.navbar-fixed .username-navigation{
+	font-size: 20px;
+	float: left;
+	margin-left: 10px;
+}
+
+/* commun to sidenav and not */
+.navbar-fixed .login-error{
+	margin: 0 5px;
+}
+.navbar-fixed .inputnav{
+	margin: 0px 10px;
+}
+.navbar-fixed .input-field input[type].focus-white {
+	margin-top: 5px;
+	padding-top: 5px;
+}
+.navbar-fixed li > a.active {
+	background-color: rgba(0,0,0, 0.2);
+}
+/* margin logout btn (not for side nav) */
+.navbar-fixed .hide-on-med-and-down .btn-navigation {
+	margin: 0 20px;
+}/
+/* sidenav */
+.navbar-fixed .sidenav .inputnav{
+	margin: 10px;
+}
+.navbar-fixed .sidenav li a {
+	color: white;
+}
+.navbar-fixed .sidenav li {
+	text-align: center;
+} 
+.navbar-fixed .sidenav .btn-navigation{
+	color: white;
+	width: 80%;
+}
+/* Fix problem sidenav overlay over sidenav when open */
+.sidenav-overlay{
+	z-index: 996;
+}
+
+/* pink border in admin */
+.navbar-fixed.admin-navbar nav{
+	border-bottom: 2px solid #ec407a;
+}

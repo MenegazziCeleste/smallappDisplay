@@ -1,0 +1,63 @@
+/* posts.js */
+	/* comment modal display comment container + inside scroll */
+	#commentsModal{
+		height: 70%;
+	}
+	#commentsModal .modal-content,
+	#commentsModal .modal-content .comments-container {
+		height: 100%;
+	}
+	#commentsModal .modal-content .comments-wrapper {
+		height: 90%;
+		border-radius: 5px;
+		padding: 5px;
+	} 
+
+	/* display delete button on post createoredit image */
+		.card .card-image .card-title.bold {
+			font-weight: bold;
+		} 
+		.card .card-image .delete {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 12px;
+		}
+	/* display handle + index image cards */
+		.card .card-image .handle {
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 12px;
+		}
+		.card .card-image .card-title span, .card .card-image .handle i {
+			padding: 5px;
+			background-color: rgba(0,0,0,0.3);
+			border-radius: 50px;
+		}
+
+	/* display add image btn*/
+	.admin-post	.add-image {
+		margin: 15px;
+	}
+
+	/* Fix for drag Sort */
+	.noselect {
+	 -webkit-touch-callout: none; /* iOS Safari */
+	   -webkit-user-select: none; /* Safari */
+		-khtml-user-select: none; /* Konqueror HTML */
+		  -moz-user-select: none; /* Firefox */
+		   -ms-user-select: none; /* Internet Explorer/Edge */
+			   user-select: none; /* Non-prefixed version, currently
+									 supported by Chrome and Opera */
+	}
+
+	.admin-post .wrap-image {
+		width: 25%;
+		padding: 5px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.admin-post .wrap-image .card {
+		margin: 0;
+	}

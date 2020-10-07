@@ -1,0 +1,45 @@
+/* all admin/files.js */
+	.admin .input-field.select {
+		margin-top: -1.25rem;
+	}
+	/* btn add post position */
+		.admin .add-post-div { 
+			position: relative;
+		}
+		.admin .add-post-div a{ 
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	/* Filters */
+		.admin .filter-btn{
+			padding: 5px;
+		}
+	/* In table tweeks */
+		/* Remove margin from input in table */
+		.admin table .input-field{
+			margin: 0;
+		}
+
+		/* table btn */
+			.wrapper-loading-btn{
+				position: relative;
+			}
+			.wrapper-loading-btn .fill-div{
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background-color: transparent;
+			}
+			.wrapper-loading-btn .fill-div:hover{
+				background-color: transparent;
+			}
+			.admin .table-btn{
+				padding: 0 12px;
+				margin: 0 5px;
+			}
+			.admin th span {
+				vertical-align: top;
+			}

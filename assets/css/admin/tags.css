@@ -1,0 +1,7 @@
+/* tags.js */
+	/* display input tag name */
+	.admin-tag .input-field .input-tag {
+		height: inherit;
+		margin: 0; 
+		width: 85%;
+	}

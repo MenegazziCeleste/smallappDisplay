@@ -1,0 +1,46 @@
+/* users.js */
+
+	/* Smaller text for password btn */
+	.admin-user .table-btn.password{
+		font-size: 10px;
+		line-height: 10px;
+		display: inline-block;
+	}
+	/* Checkboxes */
+		/* Center checkboxes in table */
+		.admin-user table [type="checkbox"] + span:not(.lever){
+			padding-left: 20px;
+		}
+		/* Green checkboxes */
+		.admin-user .greencheck [type="checkbox"]:checked + span:not(.lever)::before {
+			border-right: 2px solid #c0ca33;
+			border-bottom: 2px solid #c0ca33;
+		}
+		/* Pink checkboxes */
+		.admin-user .disabled [type="checkbox"]:checked + span:not(.lever)::before {
+			border-right: 2px solid #e91e63;
+			border-bottom: 2px solid #e91e63;
+		}
+
+	/* Modals */
+		/* Space for close btn */
+		.admin-user .close-modal-icon {
+			margin: 5px;    
+		}
+		/* Space for title */
+		.admin-user .title-modal {
+			margin-bottom: 30px;    
+		}
+		/* Space for checkboxes */
+		.admin-user .input-checkbox{
+			margin-top: 25px;
+		}
+		/* btn add user position */
+		.admin-user .add-user-div { 
+			position: relative;
+		}
+		.admin-user .add-user-div a{ 
+			position: absolute;
+			top: 0;
+			right: 0;
+		}

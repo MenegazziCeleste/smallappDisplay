@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>{% block title %}Welcome in app{% endblock %}</title>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		{% block stylesheets %}
+			{# 'app' must match the first argument to addEntry() in webpack.config.js #}
+			{{ encore_entry_link_tags('app') }}
+
+			<!-- Renders a link tag (if your module requires any CSS)
+				<link rel="stylesheet" href="/build/app.css"> -->
+		{% endblock %}
+	</head>
+	<body class="grey darken-4">
+		<div id="root"></div>
+
+		
+
+
+		{% block body %}
+		{% endblock %}
+		{% block javascripts %}
+			<script>        
+				// used if user just validated his email
+				var userValidated = {% if user_validated is null %}undefined{% elseif user_validated %}true{% else %}false{% endif %};
+				
+				// used to access the password edit form 
+				var password_token = {% if password_token is null %}undefined{% elseif password_token %}"{{password_token}}"{% else %}false{% endif %};
+				var email = {% if email is null %}undefined{% elseif email %}"{{email}}"{% else %}false{% endif %};
+				
+				// used when admin is disconnected
+				var connexion_expired = {% if connexion_expired is null %}undefined{% else %}true{% endif %};
+
+			</script>
+			{{ encore_entry_script_tags('app') }}
+			<!-- Renders app.js & a webpack runtime.js file
+				<script src="/build/runtime.js"></script>
+				<script src="/build/app.js"></script> -->
+		{% endblock %}
+	</body>
+</html>
